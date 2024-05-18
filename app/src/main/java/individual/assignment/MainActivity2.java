@@ -2,14 +2,18 @@ package individual.assignment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity2 extends AppCompatActivity implements View.OnClickListener {
 
     Button btnBack;
+
+    TextView tvClickLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +22,8 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
 
         // Initialize btnBack and set OnClickListener
         btnBack = findViewById(R.id.btnBack);
+        tvClickLink = findViewById(R.id.tvClickLink);
+        tvClickLink.setMovementMethod(LinkMovementMethod.getInstance());
         btnBack.setOnClickListener(this);
     }
 

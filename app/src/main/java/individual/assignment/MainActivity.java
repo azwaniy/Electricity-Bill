@@ -7,6 +7,7 @@ package individual.assignment;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText etNumUnits, etPercentage;
     TextView textView;
 
+
     //Change 1
     //Change 2
 
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnCalculate = findViewById(R.id.btnCalculate);
         btnClear = findViewById(R.id.btnClear);
         textView = findViewById(R.id.textView);
+
 
         btnCalculate.setOnClickListener(v -> calculateBill());
         btnClear.setOnClickListener(this);

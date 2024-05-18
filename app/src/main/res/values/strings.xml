@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Electricity Bill</string>
+    <string name="source_code"><a href="https://github.com/azwaniy/Electricity-Bill.git">SOURCE CODE</a></string>
 </resources>
